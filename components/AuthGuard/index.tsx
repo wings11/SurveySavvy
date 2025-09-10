@@ -36,9 +36,9 @@ export const AuthGuard = ({ children }: AuthGuardProps) => {
         <div className="max-w-md w-full mx-4">
           <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
             {/* Logo */}
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+            
               <Image src="/logo.png" alt="Survey Savvy" width={32} height={32} className="w-8 h-8" />
-            </div>
+            
             
             {/* Title */}
             <h1 className="text-2xl font-bold text-gray-900 mb-2">Welcome to Survey Savvy</h1>

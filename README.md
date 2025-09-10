@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## This template provides a minimal setup to get Next.js working with MiniKit
 
 ## Setup
@@ -31,3 +32,7 @@ To use the application, you'll need to:
 View docs: [Docs](https://docs.world.org/)
 
 [Developer Portal](https://developer.worldcoin.org/)
+=======
+# SurveySavvy
+This is the git repository for Survey Savvy.
+>>>>>>> a386cb2f1af43f1a0db728806ec2e433174af5ff
