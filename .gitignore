@@ -15,6 +15,7 @@
 
 # production
 /build
+package-lock.json
 
 # misc
 .DS_Store
@@ -25,8 +26,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
+# local env files - CRITICAL FOR SECURITY
+.env
 .env*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # vercel
 .vercel
@@ -35,4 +40,55 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-.env
+# 🔒 SECURITY - Sensitive files that should never be committed
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+config.json
+
+# 🛠️ Development and utility files
+check-treasury.js
+withdraw-treasury.js
+test-db.js
+update-schema.mjs
+
+# 🗄️ Database and backup files
+*.sql.backup
+*.db
+*.sqlite
+*.sqlite3
+
+# 📱 Mobile and certificates
+/certificates/
+*.mobileprovision
+*.p8
+
+# 🔧 IDE and OS files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# 📦 Package manager lock files (keep only one)
+# Uncomment the one you DON'T use:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# 🚀 Deployment and infrastructure
+.terraform/
+*.tfstate
+*.tfstate.backup
+docker-compose.override.yml
+
+# 📊 Analytics and monitoring
+.nyc_output/
+coverage/
+
+# 🔍 Security scanning results
+.snyk
+security-scan-results.json

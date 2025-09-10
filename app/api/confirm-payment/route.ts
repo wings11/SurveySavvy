@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
 
   // IMPORTANT: Here we should fetch the reference you created in /initiate-payment to ensure the transaction we are verifying is the same one we initiated
   //   const reference = getReferenceFromDB();
-  const cookieStore = cookies();
+  const cookieStore = await cookies();
 
   const reference = cookieStore.get("payment-nonce")?.value;
 
